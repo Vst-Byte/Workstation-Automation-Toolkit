@@ -1,14 +1,23 @@
 <#
 .SYNOPSIS
-    Automated File Sorter - Organizador de Arquivos por Extensão.
+    Workstation Automation Toolkit - Diagnóstico, Manutenção e Organização.
 
 .DESCRIPTION
-    Script destinado à manutenção de estações de trabalho.
-    Varre um diretório especificado, identifica tipos de arquivos e os organiza
-    em pastas temáticas.
+    Suíte de automação CLI desenvolvida para suporte técnico e administração de sistemas.
+    Centraliza rotinas essenciais de manutenção preventiva e corretiva em um único menu interativo.
+    
+    Funcionalidades incluídas:
+    1. Organização Inteligente de Arquivos (Downloads).
+    2. Limpeza de Arquivos Temporários e Cache (%TEMP%).
+    3. Coleta de Inteligência do Sistema (Hardware, Serial, Rede e Uptime).
+    4. Reparo de Conectividade de Rede (DNS Flush/IP Renew).
+    5. Análise de Logs de Erros Críticos do Windows.
 
 .NOTES
-    Ideal para limpeza de pastas de Downloads ou diretórios de Logs.
+    Version:    1.2.0
+    Author:     Enchanted
+    Target:     Windows 10/11 & Windows Server
+    Ideal for:  Helpdesk, Field Service e Manutenção Preventiva de Workstations.
 
 .AUTHOR
     Enchanted
