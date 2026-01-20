@@ -26,16 +26,16 @@ function AccessDownloadFolder {
         $PathFolder = ""
         if ($ArquivoUnico.Extension -in @(".jpg", ".png", ".jpeg", ".gif", ".bmp", ".webp")){
             
-            $PathFolder = "$Home\Downloads\Image\Folder$($ArquivoUnico.Extension)"
+            $PathFolder = "$Home\Imagens\Folder$($ArquivoUnico.Extension)"
         }else  {
             $PathFolder = "$Home\Downloads\Folder$($ArquivoUnico.Extension)"
         }
         if (-not (Test-Path $PathFolder)) {
             
-            Write-Host "Criando nova pasta: $PathFolder" -ForegroundColor Yellow
+            Write-Host "Creating New Folder: $PathFolder" -ForegroundColor Yellow
             New-Item -Path $PathFolder -ItemType Directory -Force | Out-Null
         }
-        Write-Host "Processando: $($ArquivoUnico.Name)" -ForegroundColor Gray
+        Write-Host "Processing: $($ArquivoUnico.Name)" -ForegroundColor Gray
         Move-Item -Path $ArquivoUnico.FullName -Destination $PathFolder   
  }
 
